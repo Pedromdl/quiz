@@ -1,0 +1,212 @@
+<style>
+/* CARROSSEL */
+.depo-slide {
+  display: none;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 18px;
+  background: var(--texto-claro);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  max-width: 600px;
+  transition: opacity 0.4s ease;
+}
+
+.depo-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.depo-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.depo-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--verde-limao);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.depo-info {
+  flex-grow: 1;
+}
+
+.depo-stars {
+  font-size: 1.2rem;
+  color: var(--verde-limao);
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.depo-author {
+  font-weight: bold;
+  color: var(--preto-chumbo);
+  margin-top: 5px;
+}
+
+.depo-text {
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+  padding: 0 10px;
+}
+
+#depo-carousel button {
+  background: var(--verde-limao);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: 10px 8px 0 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: var(--texto-claro);
+}
+
+#depo-carousel button:hover {
+  background: var(--preto-chumbo);
+}
+
+</style>
+
+  <!-- CARROSSEL ATUALIZADO (Código 2 integrado) -->
+
+  <!-- CARROSSEL ATUALIZADO -->
+  <div id="depo-carousel">
+    <div class="depo-slide active">
+      <div class="depo-header">
+        <img src="images/cliente7.png" alt="Ana" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Ana</div>
+        </div>
+      </div>
+      <p class="depo-text">"Meu marido trabalha em sorveteria e aprovou MUITO esse livro!"</p>
+    </div>
+    
+    <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente2.png" alt="João" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— João</div>
+        </div>
+      </div>
+      <p class="depo-text">"Fiz sem sorveteira e ficou perfeito!"</p>
+    </div>
+    
+    <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente3.png" alt="Carla" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Carla</div>
+        </div>
+      </div>
+      <p class="depo-text">"Receitas fáceis, rápidas e deliciosas. Virou tradição aqui em casa!"</p>
+    </div>
+
+    <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente4.png" alt="Iara" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Iara</div>
+        </div>
+      </div>
+      <p class="depo-text">"Nunca imaginei que seria tão simples fazer sorvete gostoso em casa. Amei! 😍"</p>
+    </div>
+
+    <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente5.png" alt="Paula" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Paula</div>
+        </div>
+      </div>
+      <p class="depo-text">"Minhas crianças pedem toda semana! Virou nosso momento favorito. 👨‍👩‍👧‍👦"</p>
+    </div>
+
+    <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente6.png" alt="Paula" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Bruno</div>
+        </div>
+      </div>
+      <p class="depo-text">"Comprei para eu e minha esposa fazermos com nossos filhos. Recomendo para todos!👦"</p>
+    </div>
+
+       <div class="depo-slide">
+      <div class="depo-header">
+        <img src="images/cliente8.png" alt="Rafaela" class="depo-avatar">
+        <div class="depo-info">
+          <div class="depo-stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="depo-author">— Rafaela</div>
+        </div>
+      </div>
+      <p class="depo-text">"Agora faço sorvete até para presentear amigos. Todo mundo elogia!"</p>
+    </div>
+    
+    <div style="text-align: center;">
+      <button onclick="prevDepo()">◀</button>
+      <button onclick="nextDepo()">▶</button>
+    </div>
+  </div>
+
+  <script>
+
+    
+  // Carrossel de depoimentos (Código 2 integrado)
+  let currentDepo = 0;
+  const depoSlides = document.querySelectorAll('.depo-slide');
+
+  function showDepo(index) {
+    depoSlides.forEach((el, i) => {
+      el.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextDepo() {
+    currentDepo = (currentDepo + 1) % depoSlides.length;
+    showDepo(currentDepo);
+    resetAutoAdvance();
+  }
+
+  function prevDepo() {
+    currentDepo = (currentDepo - 1 + depoSlides.length) % depoSlides.length;
+    showDepo(currentDepo);
+    resetAutoAdvance();
+  }
+
+  // Rotação automática (pausa ao interagir)
+  let autoAdvanceInterval;
+
+  function startAutoAdvance() {
+    autoAdvanceInterval = setInterval(() => {
+      nextDepo();
+    }, 5000);
+  }
+
+  function resetAutoAdvance() {
+    clearInterval(autoAdvanceInterval);
+    startAutoAdvance();
+  }
+
+  // Inicia tudo
+  document.addEventListener('DOMContentLoaded', () => {
+    startPersistentCountdown();
+    startAutoAdvance();
+  });
+
+  </script>

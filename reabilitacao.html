@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEP431NG6Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEP431NG6Z');
+</script>
+
+<!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '884844899996443'); 
+    fbq('track', 'PageView - Reabilitação');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1124624993037311&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neutralize Fisioterapia Ortopédica e Esportiva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+:root {
+  --bege-claro: #282829;
+    --texto-claro: #ffffff;
+    --texto-escuro: #282829;
+    --preto-chumbo: #edecea;
+    --verde-limao: #b7de42;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bege-claro);
+  color: var(--texto-escuro);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: var(--texto-claro);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: none;
+  opacity: 0;
+  transform: scale(0.98) translateY(20px);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.quiz-container.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: var(--verde-limao);
+  text-align: center;
+}
+
+.option {
+  display: block;
+  margin: 12px 0;
+  padding: 15px;
+  background: var(--bege-claro);
+  color: var(--preto-chumbo);
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.option:hover {
+  background: var(--verde-limao);
+  color: var(--texto-claro);
+  transform: scale(1.03);
+}
+
+.final img {
+  max-width: 100%;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.checkout-button {
+  background: var(--bege-claro);
+  padding: 15px 25px;
+  color: var(--preto-chumbo);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.checkout-button:hover {
+  background: var(--verde-limao);
+  color: var(--texto-claro);
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .quiz-container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .option {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .checkout-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .final-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .final-flex > div {
+    max-width: 100% !important;
+  }
+}
+</style>
+
+
+</head>
+<body>
+     <div style="text-align: center; margin: 30px auto;">
+    <img src="images/logo.png" alt="Clínica Neutralize" style="width: 30%;" />
+  </div>
+
+<!-- INÍCIO DA SEQUÊNCIA REABILITAÇÃO -->
+
+<div id="med-inicio" class="quiz-container active">
+  <h3 style="text-align: center;">Que tipo de atendimento você procura?</h3>
+  <a class="option" onclick="registrarResposta('Tipo de atendimento', 'Convênio'); nextQuestion('med-convenio')">
+Atendimento por Convênio  </a>
+  <a class="option" onclick="registrarResposta('Tipo de atendimento', 'Particular'); nextQuestion('med-particular')">
+Atendimento Particular  </a>
+  <a class="option" onclick="registrarResposta('Tipo de atendimento', 'Ainda tenho dúvidas'); nextQuestion('med-compara')">
+  Ainda não sei, quero entender as opções
+  </a>
+</div>
+
+
+<div id="med-convenio" class="quiz-container">
+  <h3 style="text-align: center; color: #282829;">Essa opção não está disponível em nosso consultório</h3>
+  
+  <p style="line-height: 1.6; max-width: 600px; margin: 0 auto 25px; text-align: center;">
+    Nós acreditamos que <strong>tratamentos resolutivos</strong> e focados em resultados rápidos exigem liberdade para utilizar as melhores abordagens, sem limitações de tempo ou procedimentos.
+  </p>
+
+  <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
+    <div style="background: #fefefe; border-left: 5px solid #e57373; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #e57373;">🚫 Atendimento por Convênio</strong><br />
+      ⏱️ Sessões rápidas com tempo limitado<br />
+      📋 Protocolos padronizados<br />
+      ⛔ Atrasos e espera por autorizações<br />
+      🔄 Foco em frequência, não em resultado
+    </div>
+    <div style="background: #f9fff4; border-left: 5px solid #b7de42; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #689f38;">✅ Atendimento Particular</strong><br />
+      🕒 Sessões individuais personalizadas<br />
+      🧠 Abordagem baseada em evidência<br />
+      🧩 Avaliação e foco na causa da dor<br />
+      🎯 Menos sessões, mais resultado
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <p style="font-size: 1rem; margin-bottom: 15px;">
+      Se você valoriza <strong>eficiência e melhora real da dor</strong>, fale com a gente e veja como o atendimento particular pode te surpreender.
+    </p>
+    <a class="checkout-button" href="https://wa.me/SEUNUMERO?text=Oi!%20Vi%20que%20vocês%20não%20atendem%20convênio,%20mas%20quero%20saber%20mais%20sobre%20o%20atendimento%20particular." target="_blank">
+      ENTENDER SOBRE O ATENDIMENTO PARTICULAR
+    </a>
+  </div>
+</div>
+
+<div id="med-particular" class="quiz-container">
+  <h3 style="text-align: center; color: #282829;">Seu tratamento começa com uma avaliação de verdade</h3>
+
+  <p style="line-height: 1.6; max-width: 620px; margin: 0 auto 25px; text-align: center;">
+    Aqui na <strong>Clínica Neutralize</strong>, o atendimento particular não é apenas mais uma sessão: é o início de uma jornada para eliminar a dor e retomar sua qualidade de vida.  
+    <br><br>
+    Começamos com uma <strong>avaliação individualizada</strong>, onde investigamos seu histórico clínico, entendemos seus sintomas e realizamos testes físicos que nos mostram onde está a raiz do problema.
+    <br><br>
+    Com isso, traçamos um plano de tratamento estratégico, focado em gerar resultado — não apenas alívio temporário. E tudo isso com recursos que você só encontra em um atendimento realmente personalizado.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 30px;">
+    <div style="background: #e3f2fd; border-left: 5px solid #42a5f5; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #1e88e5;">⚡ Eletroterapia</strong><br />
+      Para analgesia, modulação da dor e ativação muscular eficiente.
+    </div>
+    <div style="background: #f1f8e9; border-left: 5px solid #8bc34a; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #689f38;">✋ Terapia Manual</strong><br />
+      Técnicas manuais específicas que tratam a origem do problema.
+    </div>
+    <div style="background: #fff3e0; border-left: 5px solid #ffa726; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #f57c00;">🔄 Combinação Estratégica</strong><br />
+      Integramos recursos para acelerar o processo de recuperação.
+    </div>
+    <div style="background: #ede7f6; border-left: 5px solid #9575cd; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #7e57c2;">📈 Monitoramento Contínuo</strong><br />
+      Acompanhamento próximo para adaptar o plano conforme sua evolução.
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <p style="font-size: 1rem; max-width: 600px; margin: 0 auto 15px;">
+      Se você procura <strong>resultados reais</strong>, sem perder tempo com sessões repetitivas, agende agora sua avaliação personalizada com nossos especialistas.
+    </p>
+    <a class="checkout-button" href="https://wa.me/SEUNUMERO?text=Olá!%20Vi%20sobre%20o%20atendimento%20particular%20e%20quero%20agendar%20minha%20avaliação%20na%20Clínica%20Neutralize." target="_blank">
+      AGENDAR MINHA AVALIAÇÃO
+    </a>
+  </div>
+</div>
+
+<div id="med-compara" class="quiz-container">
+  <h3 style="text-align: center; color: #282829;">Qual a diferença entre o convênio e o atendimento particular?</h3>
+
+  <p style="line-height: 1.6; max-width: 620px; margin: 0 auto 25px; text-align: center;"> 
+    Se você busca um atendimento que realmente faça a diferença na sua saúde, precisa entender o que separa o convênio do atendimento particular.
+    <br><br>
+    Enquanto o convênio limita seu tratamento a protocolos rígidos e sessões rápidas, no atendimento particular você tem o poder de escolher um cuidado exclusivo, feito para <strong>suas necessidades reais</strong> — focado em resultados e na sua qualidade de vida.
+  </p>
+
+  <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
+    <div style="background: #fde0dc; border-left: 5px solid #d81b60; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #b71c1c;">🛑 Atendimento por Convênio</strong><br />
+      ➤ Sessões com tempo muito limitado, corridas e sem acompanhamento<br />
+      ➤ Profissionais diferentes a cada consulta, sem continuidade<br />
+      ➤ Protocolos genéricos que nem sempre atendem suas necessidades<br />
+      ➤ Demora em autorizações e exames, atrasando sua recuperação<br />
+      ➤ Foco na quantidade, não na qualidade do tratamento
+    </div>
+    <div style="background: #e8f5e9; border-left: 5px solid #388e3c; padding: 15px 20px; border-radius: 10px;">
+      <strong style="color: #2e7d32;">✨ Atendimento Particular</strong><br />
+      ➤ Avaliação detalhada que identifica a raiz do seu problema<br />
+      ➤ Tratamento personalizado, 1:1, com o mesmo fisioterapeuta dedicado<br />
+      ➤ Combinação inteligente de técnicas para acelerar resultados<br />
+      ➤ Liberdade para usar tecnologias e métodos avançados sem limitações<br />
+      ➤ Acompanhamento próximo e ajustes constantes para seu progresso real<br />
+      ➤ Menos sessões, mais qualidade de vida e retorno rápido às suas atividades
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <p style="font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;">
+      Escolha um caminho de cuidado que respeita seu tempo e seu corpo. Quer entender como o atendimento particular pode transformar sua saúde?
+    </p>
+    <a class="checkout-button" href="https://wa.me/SEUNUMERO?text=Oi!%20Quero%20saber%20mais%20sobre%20o%20atendimento%20particular%20e%20como%20ele%20pode%20me%20ajudar." target="_blank">
+      FALAR COM UM ESPECIALISTA
+    </a>
+  </div>
+</div>
+
+
+
+
+<body>
+<script>
+  function nextQuestion(nextId) {
+    const allContainers = document.querySelectorAll('.quiz-container');
+    allContainers.forEach(el => el.classList.remove('active'));
+
+    setTimeout(() => {
+      const next = document.getElementById(nextId);
+      next.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (nextId === 'final') {
+        startConfetti();
+      }
+    }, 250);
+  }
+
+  function getCookie(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  // Inicia tudo
+  document.addEventListener('DOMContentLoaded', () => {
+    startPersistentCountdown();
+    startAutoAdvance();
+  });
+
+  const respostas = [];
+
+function registrarResposta(pergunta, resposta) {
+  respostas.push({ pergunta, resposta });
+
+  // Google Analytics 4
+  gtag('event', 'resposta_quiz', {
+    question: pergunta,
+    answer: resposta
+  });
+
+  // Facebook Pixel
+  fbq('trackCustom', 'QuizResposta', {
+    pergunta: pergunta,
+    resposta: resposta
+  });
+}
+</script>
+
+</body>
+</html>
