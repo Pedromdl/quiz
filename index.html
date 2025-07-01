@@ -210,62 +210,6 @@ h2 {
   </p>
 </div>
 
-
-<div id="q1" class="quiz-container">
-
-
-  <h2>Vamos começar!</h2>  
-  <h3 style="font-size: 1.1rem; text-align: center; margin-bottom: 20px;">
-    Qual é o seu nível de experiência na cozinha?
-  </h3>
-  
-  <a class="option" onclick="registrarResposta('Experiência na cozinha', 'Não sei nem usar fouet'); nextQuestion('q2')">Não sei nem usar fouet</a>
-  <a class="option" onclick="registrarResposta('Experiência na cozinha', 'Cozinho às vezes, quando empolgo'); nextQuestion('q2')">Cozinho às vezes, quando empolgo</a>
-  <a class="option" onclick="registrarResposta('Experiência na cozinha', 'Adoro testar receitas novas'); nextQuestion('q2')">Adoro testar receitas novas</a>
-  <a class="option" onclick="registrarResposta('Experiência na cozinha', 'Faço receitas quase todo dia'); nextQuestion('q2')">Faço receitas quase todo dia</a>
-</div>
-
-<div id="final" class="quiz-container final">
-  <div class="final-flex" style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 25px; align-items: center;">
-    <div style="flex: 0 0 40%; max-width: 250px;">
-      <img src="images/pessoa2.png" alt="Sorvete caseiro perfeito" style="width: 100%; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-    </div>
-    <div style="flex: 1;">
-      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 0;">
-        <strong>"Chega de tentativas frustradas!"</strong>
-      </p>
-      <p style="line-height: 1.6;">
-        Depois de <strong>47 receitas testadas</strong> e incontáveis frustrações no freezer, descobri o método que transforma ingredientes simples em sorvete <strong>cremoso, no ponto certo</strong> - exatamente como você merece.
-      </p>
-    </div>
-  </div>
-
-  <div style="background: #FFF8F5; padding: 20px; border-radius: 14px; margin: 25px 0; border-left: 4px solid #FF6B4A;">
-    <p style="line-height: 1.6; margin: 0;">
-      ❌ <strong>Nunca mais</strong>: Sorvete duro como pedra<br>
-      ❌ <strong>Chega</strong>: Gosto artificial de leite condensado<br>
-      ❌ <strong>Fim</strong>: Textura granulada ou aquosa<br>
-      ✅ <strong>Só</strong>: Resultado profissional na sua cozinha
-    </p>
-  </div>
-
-  <div id="intro" class="quiz-container active">
- 
-
-  <h3 style="font-size: 1.1rem; text-align: center; margin-bottom: 20px;">
-    Qual serviço da Clínica Neutralize mais te interessa hoje?
-  </h3>
-
-<a class="option" onclick="registrarResposta('Serviço', 'Liberação Miofascial'); window.location.href='liberacao.html'">Liberação Miofascial</a>
-  <a class="option" onclick="registrarResposta('Serviço de Interesse', 'Reabilitação',); nextQuestion('reabilitacao.html')">Reabilitação Ortopédica e Esportiva</a>
-  <a class="option" onclick="registrarResposta('Serviço de Interesse', 'Avaliação Funcional',); nextQuestion('avaliacao.html')">Avaliação Funcional</a>
-
-  <p style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #666;">
-    Responda algumas perguntas rápidas e descubra o atendimento ideal para você
-  </p>
-</div>
-
-
 <script>
   function nextQuestion(nextId) {
     const allContainers = document.querySelectorAll('.quiz-container');
